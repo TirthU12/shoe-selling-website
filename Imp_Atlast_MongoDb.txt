@@ -1,0 +1,6 @@
+Mydbuser@12
+mydbuser
+mongodb+srv://mydbuser:<Password>@ecommercecluster.lp1xa9s.mongodb.net/?appName=EcommerceCluster
+
+
+mongorestore --uri "mongodb+srv://mydbuser:Mydbuser%4012@ecommercecluster.lp1xa9s.mongodb.net/E-Commerce" "C:\backup\E-Commerce"

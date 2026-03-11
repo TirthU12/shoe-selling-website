@@ -1,0 +1,213 @@
+
+.register-container {
+    min-height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+}
+
+.register-main-card {
+    width: 100%;
+    max-width: 1200px;
+    background-color: #ffffff;
+    border-radius: 30px;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+    overflow: hidden;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.register-left-section {
+    flex: 1;
+    min-width: 300px;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 50%, #f093fb 100%);
+    padding: 60px 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.register-left-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+.register-left-content {
+    position: relative;
+    z-index: 1;
+    text-align: center;
+}
+
+.register-sneaker-svg {
+    width: 250px;
+    height: 250px;
+    margin: 0 auto 30px;
+    transform: rotate(-12deg);
+    transition: transform 0.5s ease;
+}
+
+.register-sneaker-svg:hover {
+    transform: rotate(0deg);
+}
+
+.register-brand-title {
+    font-size: 48px;
+    font-weight: bold;
+    color: #ffffff;
+    margin-bottom: 15px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.register-brand-tagline {
+    font-size: 20px;
+    color: #ffffff;
+    opacity: 0.9;
+}
+
+.register-right-section {
+    flex: 1;
+    min-width: 300px;
+    background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f0f1e 100%);
+    padding: 60px 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.register-form-container {
+    width: 100%;
+    max-width: 400px;
+}
+
+.register-header {
+    margin-bottom: 30px;
+}
+
+.register-welcome-title {
+    font-size: 36px;
+    font-weight: bold;
+    color: burlywood;
+    margin-bottom: 10px;
+}
+
+.register-welcome-subtitle {
+    font-size: 16px;
+    color: bisque;
+}
+
+.register-form-group {
+    margin-bottom: 20px;
+}
+
+.register-label {
+    display: block;
+    font-size: 14px;
+    font-weight: 600;
+    color: lightsalmon;
+    margin-bottom: 8px;
+}
+
+.register-input,
+.register-select {
+    width: 100%;
+    padding: 12px 16px;
+    font-size: 15px;
+    border: 2px solid #e2e8f0;
+    border-radius: 10px;
+    outline: none;
+    transition: all 0.3s ease;
+    box-sizing: border-box;
+}
+
+.register-input:focus,
+.register-select:focus {
+    border-color: #667eea;
+    box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.1);
+}
+
+.register-select {
+    background-color: #ffffff;
+    cursor: pointer;
+}
+
+.register-error-text {
+    color: #e53e3e;
+    font-size: 13px;
+    margin-top: 5px;
+}
+
+.register-button-group {
+    margin-top: 25px;
+}
+
+.register-button {
+    width: 100%;
+    padding: 14px;
+    font-size: 16px;
+    font-weight: 600;
+    color: #ffffff;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin-bottom: 12px;
+    box-shadow: 0 4px 15px rgba(102, 126, 234, 0.4);
+}
+
+.register-button:hover {
+    transform: scale(1.02);
+    box-shadow: 0 6px 20px rgba(102, 126, 234, 0.5);
+}
+
+.register-login-text {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 14px;
+    color: lightgoldenrodyellow;
+}
+
+.register-login-link {
+    color: #667eea;
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-weight: 600;
+    text-decoration: none;
+    margin-left: 5px;
+}
+
+.register-login-link:hover {
+    text-decoration: underline;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .register-left-section {
+        min-height: 300px;
+    }
+
+    .register-sneaker-svg {
+        width: 180px;
+        height: 180px;
+    }
+
+    .register-brand-title {
+        font-size: 36px;
+    }
+
+    .register-welcome-title {
+        font-size: 28px;
+    }
+
+    .register-right-section {
+        padding: 40px 20px;
+    }
+}

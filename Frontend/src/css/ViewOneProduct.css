@@ -1,0 +1,230 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+.main {
+    margin: 50px;
+    padding: 20px;
+    width: auto;
+    border: 1px solid lightgray;
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+
+    
+}
+.main_image_container{
+    width: 45%;
+    /* border: 1px solid black; */
+
+}
+.details_container{
+    width: 50%;
+    /* border: 1px solid black; */
+}
+body {
+    margin:0;
+    padding-top: 5%;
+    font-family: 'Poppins', sans-serif;
+    background-color: #f5f5f5;
+}
+.child_container{
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+    /* border: 1px solid black; */
+}
+
+.image_container {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    width: fit-content;
+    border: .5px solid lightgray;
+    padding: 10px;
+    background-color: white;
+}
+
+.small_image {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.image_box {
+    border: 1px solid lightgray;
+    padding: 4px;
+    cursor: pointer;
+    transition: border 0.2s ease-in-out;
+    background-color: white;
+}
+
+.image_box:hover {
+    border: 2px solid blue;
+}
+
+.image_box img {
+    height: 100px;
+    width: 60px;
+    object-fit: contain;
+    border-radius: 4px;
+}
+
+.main_image_box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid lightgray;
+    padding: 10px;
+    width: 300px;
+    height: auto;
+    background-color: white;
+}
+
+.main_image_box img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+}
+.button_container{
+    padding-top: 20px;
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    width: auto;
+    border: .5px solid lightgray;
+    padding: 20px;
+    align-items: center;
+    justify-content: center;
+}
+.buy_button{
+    height: 30px;
+    width: 50%;
+    font-family: 'Poppins', sans-serif;
+    background-color: antiquewhite;
+    border-radius: 3px;
+    border: .5 solid black;
+    font-size: 15px;
+}
+.add_to_cart{
+    height: 30px;
+    width: 50%;
+    font-family: 'Poppins', sans-serif;
+    background-color:burlywood;
+    font-size: 15px;
+    border-radius: 3px;
+    border: .5 solid black;
+    outline: none;
+}
+.product_text {
+    white-space: pre-line; /* allows \n line breaks */
+    word-wrap: break-word; /* wrap long words if needed */
+    max-width: 100%; 
+    font-family: 'Poppins', sans-serif;
+    font-size: 25px;     
+}
+
+.product_name span{
+    font-size: 18px;
+    font-style: italic;
+}
+
+.size{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    align-items: center;
+}
+.size span{
+    font-size: 25px;
+}
+.size_avi{
+    display: flex;
+    border: .5px solid black;
+    height: 30px;
+    width: 30px;
+    align-items: center;
+    justify-content: center;
+}
+.size_avi p{
+    font-size: 15px;
+}
+.size_avi:hover{
+    cursor: pointer;
+
+}
+.size_avi[data-selected="false"]:hover{
+    background-color: rgba(0, 0, 0, 0.866);
+    color: white;
+
+}
+.size_avi[data-selected="true"] {
+  border: 2px solid blue;
+  background-color: #e6f0ff;
+}
+.price{
+    margin-left: 50px;
+
+}
+.price p{
+    font-size: 20px;
+}
+
+.description{
+    font-size: 20px;
+}
+.description span{
+    font-weight: bold;
+}
+.rating{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.rating_name{
+    height: 30px;
+    width: 30px;
+    background-color: green;
+    padding: 3px;
+    font-size: 16px;
+    border-radius: 5px;
+    color: white;
+    font-weight: bold;
+}
+
+.color_main{
+    display: flex;
+    flex-direction: row;
+    padding-top: 30px;
+    gap: 20px;
+    align-items: center;
+
+}
+.color_main div[data-selected="false"]{
+    border: 1px solid black;
+}
+.color_main div[data-selected="false"]:hover{
+    cursor: pointer;
+}
+.color_main div[data-selected="true"]{
+    border: 2px solid blue;
+  /* background-color: #e6f0ff; */
+}
+.color_main img{
+    height:75px;
+    object-fit: contain;
+    width: 75px;
+}
+.color_main p{
+    font-size: 20px;
+}
+
+.qtymain {
+  margin: 10px 0;
+}
+
+.qtymain select {
+  padding: 6px 10px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  background-color: #fff;
+}
